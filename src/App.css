@@ -1,0 +1,78 @@
+@import "tailwindcss";
+@font-face {
+  font-family: "Negra";
+  src: url('./assets/fonts/Negra.ttf');
+}
+
+@theme {
+  --font-family-garamond: "EB Garamond", serif;
+  --font-family-negra: "Negra", serif;
+}
+
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+} */
+
+
+/* img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+.class-list::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  background-color: black;
+  width: 100%;
+  height: 0.15rem;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.class-list:hover::after{
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* section{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 1rem 3rem;
+} */
+.hero{
+  background-image: url(../public/images/Rectangle\ 1441.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/* .typography{
+  margin-top: 5rem;
+  text-align: center;
+  margin-left: 5rem;
+  margin-right: 5rem;
+} */
+/* .typography p{
+  margin-top: 1rem;
+} */
+/* .searchButton{
+  margin-top: 1rem;
+  padding: 0.5rem 4rem;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  gap: 3rem;
+} */
+/* .searchContainer{
+  background-color: #E58411;
+  
+} */
+/* .details{
+  padding: 1rem 3rem;
+} */
